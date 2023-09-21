@@ -9,8 +9,16 @@
 <body>
     <h1>titre</h1>
     <ul>
-        <li th:each="list : ${messages}" th:text="${list}"></li>
+        <li th:each="list : ${listes}" th:text="${list}"></li>
     </ul>
+
+<form method="post">
+    <label for="firstName">Prénom :</label><br>
+    <input type="text"  id="firstName" name="firstName"  required /><br>
+    <label for="lastName">Nom :</label><br>
+    <input type="text"  id="lastName" name="lastName"  required/><br>
+    <input type="submit" value="Envoyer" />
+</form>
 
 </body>
 

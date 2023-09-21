@@ -13,3 +13,9 @@ spring:
     activate:
       on-profile: prod
 message: Hello Prod!
+
+---
+
+spring.thymeleaf.prefix=classpath:/templates/
+spring.thymeleaf.suffix=.html
+spring.thymeleaf.cache=false
