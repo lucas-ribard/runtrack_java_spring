@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.lang.reflect.Array;
-
 
 @Controller
 public class ViewController {
@@ -20,7 +18,8 @@ public class ViewController {
     }
 
     @PostMapping("/Main")
-    public String greetingSubmit(@RequestParam String firstName, @RequestParam String lastName, Model model) {
+    public String greetingSubmit(@RequestParam String firstName, @RequestParam String lastName,@RequestParam int age, Model model) {
+        //@Min(18)
         String message = "Bonjour, " + firstName + " " + lastName + " !";
         model.addAttribute("message", message);
 
