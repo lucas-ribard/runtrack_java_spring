@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Kill me</title>
+</head>
+
+<body>
+    <h1>titre</h1>
+    <ul>
+        <li th:each="list : ${messages}" th:text="${list}"></li>
+    </ul>
+
+</body>
+
+</html>
