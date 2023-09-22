@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Kill me</title>
+    <title>Jour02</title>
 </head>
 
 <body>
-    <h1>titre</h1>
+    <h1>Jour02</h1>
     <ul>
         <li th:each="list : ${listes}" th:text="${list}"></li>
     </ul>
@@ -17,6 +17,8 @@
     <input type="text"  id="firstName" name="firstName"  required /><br>
     <label for="lastName">Nom :</label><br>
     <input type="text"  id="lastName" name="lastName"  required/><br>
+    <label for="age">Age :</label><br>
+    <input type="text"  id="age" name="age"  required/><br>
     <input type="submit" value="Envoyer" />
 </form>
 
